@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* background-image: repeating-conic-gradient(red 10%, yellow 20%); */
+        }
+        .apple{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background: #f5ecf4;
+            /* background: transparent; */
+        }
+        .ringo{
+            background-color: #FF0800;
+            height: 150px;
+            width: 150px;
+            position: relative;
+            border-radius: 36% 36% 41% 41% / 42% 42% 75% 75%;
+            
+        }
+        .leaf{
+            background-color: #47cf73;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px 3px;
+            position: relative;
+            left: 20px;
+            z-index: 3;
+            margin-bottom: -17px;
+        }
+        .stick{
+            background-color: #47cf73;
+            width: 10px;
+            height: 60px;
+            border-radius:3px;
+            position: relative;
+            left: -5px;
+            z-index: 3;
+            margin-bottom: -40px;
+        }
+        .top{
+            background-color: #f5ecf4;
+            width: 40px;
+            height: 20px;
+            border-radius: 100%;
+            margin: -6px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="apple">
+        <div class="stick"></div>
+        <div class="leaf"></div>
+        <div class="top"></div>
+        <div class="ringo"></div>
+    </div>
+    
+</body>
+</html>

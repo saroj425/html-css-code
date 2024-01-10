@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: azure;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            cursor: pointer;
+            position: relative;
+            padding: 10px 20px;
+            background: whitesmoke;
+            font-size: 20px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            transition: all 1s;
+        }
+        .btn::after,.btn::before{
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            border: 0px solid #fff;
+            transition: all 1s;
+        }
+        .btn::after{
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn">Button</button>
+    </div>
+</body>
+</html>

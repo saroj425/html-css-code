@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+        .wrapper{
+            display: flex;
+        }
+        .stick{
+            height: 400px;
+            width: 10px;
+            background: black;
+            /* border-top-left-radius: 10px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px; */
+            border-radius: 5px;
+        }
+        .flag{
+            width: 300px;
+            height: 240px;
+            margin-top: 5px;
+            /*border: 1px solid bisque;*/
+            background-color: transparent;
+            position: relative;
+            box-shadow: 0px 0px 90px 1px #989;
+            /* border-top: 84px solid #ff9933 ;
+            border-bottom: 84px solid green; */
+        }
+        .top{
+            height: 80px;
+            background-color:#ff9933 
+        }
+        .middle{
+            height: 80px;
+            background-color: #fff ;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .bottom{
+            height: 80px;
+            background-color: green 
+        }
+        .wheel{
+            width: 60px;
+            height: 60px;
+            border: 1px solid#000;
+            position: relative;
+            border-radius: 50%;
+            margin: 0 auto;
+            animation: wheel infinite 0.5s linear;
+        }
+        .wheel .line{
+            height: 100%;
+            width: 1px;
+            background-color: #000;
+            position: absolute;
+            left: 50%;
+            display: inline-block;
+        }
+        .line:nth-child(1){
+            transform: rotate(15deg);
+        }
+        .line:nth-child(2){
+            transform: rotate(30deg);
+        }
+        .line:nth-child(3){
+            transform: rotate(45deg);
+        }
+        .line:nth-child(4){
+            transform: rotate(60deg);
+        }
+        .line:nth-child(5){
+            transform: rotate(75deg);
+        }
+        .line:nth-child(6){
+            transform: rotate(90deg);
+        }
+        .line:nth-child(7){
+            transform: rotate(105deg);
+        }
+        .line:nth-child(8){
+            transform: rotate(120deg);
+        }
+        .line:nth-child(9){
+            transform: rotate(135deg);
+        }
+        .line:nth-child(10){
+            transform: rotate(150deg);
+        }
+        .line:nth-child(11){
+            transform: rotate(165deg);
+        }
+        .line:nth-child(12){
+            transform: rotate(180deg);
+        }
+        @keyframes wheel {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="stick"></div>
+        <div class="flag">
+            <div class="top"></div>
+            <div class="middle">
+                <h2>Jai</h2>
+                <div class="wheel">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <h2>Hind</h2>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</body>
+</html>
