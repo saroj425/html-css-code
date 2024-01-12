@@ -1,0 +1,106 @@
+
+<!--Find the duplicate value---------------------->
+<!-- <script>
+    let arr = [2,4,3,6,4,7,8,6,8,4];
+    let duplicate = arr.filter((ele,index,array)=>array.indexOf(ele)!==index)
+    console.log("duplicates",duplicate);
+</script> -->
+
+<!--==================Find the max and min value in javasript-->
+
+<!-- <script>
+    let arrnum = [2,34,54,12,50,90,120];
+    const maxFunction = (arr)=>{
+        return arr.reduce(function(prev,next){
+            return prev>next ? prev : next;
+        })        
+    }
+    console.log(maxFunction(arrnum));
+</script>
+
+<script>
+    let arrmin = [2,34,54,12,50,90,120];
+    const minFunction = (arr)=>{
+        return arr.reduce(function(prev,next){
+            return prev < next ? prev : next;
+        })        
+    }
+    console.log(minFunction(arrmin));
+</script> -->
+
+<!-- <script>
+    let a = 20;
+    let b = "20";
+    console.log(a==b);//true
+    console.log(a===b)///flase
+</script> -->
+
+<!---------=================Print Pattern===============================-->
+
+<!-- <script>
+    //let i,j;
+    var i,j;
+    for(i=1;i<=5;i++){
+        for(j=1; j<=i;j++)
+        document.write("*");
+        document.write("<br>");
+    }   
+</script>
+
+
+*
+**
+***
+****
+***** -->
+
+<!-- <script>
+    var i,j;
+    for(i=5;i>=1;i--){
+        for(j=1; j<=i;j++)
+        document.write("*");
+        document.write("<br>");
+    }   
+</script>
+*****
+****
+***
+**
+* -->
+<!---========================Second Largest Number-->
+<!-- <script>
+    const intArray = [2,5,3,8,6,9];
+    const largeValue = (arr)=>{
+        firstLargest = Math.max(...arr);
+        index = arr.indexOf(firstLargest)        
+        let newarr = arr.splice(index,1)
+        secondLargest = Math.max(...arr);
+        return (secondLargest);
+    } 
+    console.log(largeValue(intArray))
+</script> -->
+
+<!---=======================Array and filter method==============-->
+<script>
+    const empArr = [
+        {name:"Saroj", age:34},
+        {name:"Guddu", age:34},
+        {name:"Rahul", age:36},
+        {name:"Sanjay", age:34},
+        {name:"Arjun", age:30},
+        {name:"Arun", age:36},
+        {name:"Ravi", age:20},
+        {name:"AnuP", age:20},
+        {name:"Prince", age:20},
+    ]
+    const filterItem =empArr.filter((item)=>{
+        return item.age >35;
+    })
+    const findItem = empArr.find((item)=>{
+        return item.age>30;
+    })
+    console.log(filterItem);
+    console.log(findItem);
+</script>
+
+
