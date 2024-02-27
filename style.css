@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0a1b18;    
+}
+.container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.container::before{
+    content: "";
+    top: 50px;
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    color: red;
+    z-index: 100000;
+}
+.wheel{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 3px solid #39ffe2;
+    box-shadow: 0 0 10px #39ffe2;
+    border-radius: 50%;
+    transition: trasnform 5s ease-in-out;
+    overflow: hidden;
+}
+.wheel span{
+    position: absolute;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 100%;
+    background: #39ffe2;
+    transform: rotate(calc(45deg * var(--i)));
+    filter: drop-shadow(0 0 5px #39ffe2);
+}
+.spinbutton{
+    position: absolute;
+    inset: 140px;
+    background: #39ffe2;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+    filter:drop-shadow(0 0 5px #39ffe2);
+    user-select: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.number{
+    position: absolute;
+    inset: 0;
+    rotate: 22.5deg;
+}
+.number b{
+    position: absolute;
+    inset: 10px;
+    transform: rotate(calc(45deg * var(--i)));
+    text-align: center;
+    font-size: 1.5rem;
+    color: #39ffe2;
+    font-weight: 500;
+    filter: drop-shadow(0 0 10px #39ffe2);
+}
+.inner{
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: #0a1b18;
+    border: 3px solid #ffc400;
+    transition: transform 10s ease-in-out;
+}
